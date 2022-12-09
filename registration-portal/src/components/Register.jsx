@@ -1,41 +1,23 @@
-import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useForm } from "react-hook-form";
 import logo from '../assets/Logo.png'
 
-let s= {fName: 'chiinedu', dept: 'catfish', gender: 'Male', faculty: 'SICT', level: '300'}
 
 const Register = () => {
+  const { register, handleSubmit, formState: { errors } } = useForm();
+
   const nav = useNavigate()
 
-  const [values, setValues] = useState({})
-
-  const valueChange = (e)=>{
-    const { name, value } = e.target;
-    setValues({...values, [name]:value})
-    
-
-  }
-
-
-  const onRegister = (e)=>{
-    e.preventDefault()
-    const objKeys = Object.keys(values) //objkeys contains all the keys of the object Values
-    
-    if (objKeys.length === 5){
-      console.log(values)
-      setValues({})
-      nav(`/confirm?state=${ btoa(JSON.stringify(s))}`)
-
-    } else if (objKeys.length < 5){
-      alert ('Please Fill in all Required feild')
-    }
+  const onRegister = (data)=>{
+    console.log(data)
+    nav(`/confirm?state=${ btoa(JSON.stringify(data))}`);
     
   }
 
 
 
   return (
-    <div className="w-screeen h-screen bg-white px-7 py-20 flex flex-col items-center">
+    <div className="w-screen h-screen bg-white px-7 py-20 flex flex-col items-center">
       <div className="flex items-center flex-col">
         <div className="bg-white min-h-full rounded drop-shadow-lg flex justify-center px-4 py-4 md:w-11/12">
           <div className="container bg-inherit flex flex-col items-center pt-2">
@@ -44,32 +26,35 @@ const Register = () => {
               <h3 className="font-workSans uppercase text-xs font-bold md:text-base">His Dwelling Place</h3>
               <p className="font-slabo text-sm md:text-sm">School of Destiny (SOD) '22</p>
 
-              <form onSubmit={onRegister} className='mt-10 md:mt-6 w-full p-2'>
-                  <label htmlFor="" className='font-workSans text-sm '>Full Name*</label>
-                  <input type="text" name='fName' value={values.fName || ""} onChange={valueChange} placeholder='Enter Full name here e.g JOHN, Doe' className='px-4 py-2 my-2 rounded-sm text-xs md:text-sm font-workSans border outline-transparent font-thin w-full'/>
+              <form onSubmit={handleSubmit(onRegister)} className='mt-10 md:mt-6 w-full p-2'>
+                  <label htmlFor="" className='font-workSans text-sm ' >Full Name*</label>
+                  <input type="text" {...register("fName", { required: true, minLength: 3})} placeholder='Enter Full name here e.g JOHN, Doe' className="px-4 py-2 my-2 rounded-sm text-xs md:text-sm font-workSans border outline-transparent font-thin w-full" />
+                  <div className='md:w-96 pb-3 text-xs text-red-600 italic'>{errors.fName?.type === 'required' && <p role="alert" >Enter your Full Name</p>}</div>
 
                   <label htmlFor="" className='font-workSans text-sm '>SOD Department*</label>
-                  <select name='dept' value={values.dept || ""} onChange={valueChange} className='flex my-2 rounded-sm w-full px-4 py-2 border outline-transparent font-thin font-workSans text-sm md:text-sm cursor-pointer'>
+                  <select {...register("sodDept", { required: true})} className='flex my-2 rounded-sm w-full px-4 py-2 border outline-transparent font-thin font-workSans text-sm md:text-sm cursor-pointer'>
                       <option value=""></option>
                       <option value="class two">Class two</option>
                       <option value="class three">Class three</option>
                       <option value="class four">Class four</option>
                       <option value="class five">Class five</option>
                   </select>
+                  <div className='md:w-96 pb-3 text-xs text-red-600 italic'>{errors.sodDept?.type === 'required' && <p role="alert" >Please Select a Department</p>}</div>
 
                   <div className='flex justify-between'>
                     <div>
                       <label htmlFor="" className='font-workSans text-sm'>Gender*</label>
-                      <select name='gender' value={values.gender || ""} onChange={valueChange} className='flex my-2 rounded-sm w-full px-4 py-2 border outline-transparent font-thin font-workSans text-sm md:text-sm cursor-pointer'>
+                      <select {...register("gender", { required: true})} className='flex my-2 rounded-sm w-full px-4 py-2 border outline-transparent font-thin font-workSans text-sm md:text-sm cursor-pointer'>
                         <option value=""></option>
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
                       </select>
+                      <div className='md:w-50 pb-3 text-xs text-red-600 italic'>{errors.gender?.type === 'required' && <p role="alert" >Select Gender</p>}</div>
                     </div>
                     
                     <div>
                       <label htmlFor="" className='font-workSans text-sm'>Faculty*</label>
-                      <select name='faculty' value={values.faculty || ""} onChange={valueChange} className='flex my-2 rounded-sm w-full px-4 py-2 border outline-transparent font-thin font-workSans text-sm md:text-sm cursor-pointer'>
+                      <select {...register("faculty", { required: true})} className='flex my-2 rounded-sm w-full px-4 py-2 border outline-transparent font-thin font-workSans text-sm md:text-sm cursor-pointer'>
                         <option value=""></option>
                         <option value="SICT">SICT</option>
                         <option value="SEET">SEET</option>
@@ -77,11 +62,12 @@ const Register = () => {
                         <option value="SLS">SLS</option>
                         <option value="SIPET">SIPET</option>
                       </select>
+                      <div className='md:w-50 pb-3 text-xs text-red-600 italic'>{errors.faculty?.type === 'required' && <p role="alert" >Select Faculty</p>}</div>
                     </div>
 
                     <div>
                       <label htmlFor="" className='font-workSans text-sm'>Level*</label>
-                      <select name='level' value={values.level || ""} onChange={valueChange} className='flex my-2 rounded-sm w-full px-4 py-2 border outline-transparent font-thin font-workSans text-sm md:text-sm cursor-pointer'>
+                      <select {...register("level", { required: true})} className='flex my-2 rounded-sm w-full px-4 py-2 border outline-transparent font-thin font-workSans text-sm md:text-sm cursor-pointer'>
                         <option value=""></option>
                         <option value="100">100</option>
                         <option value="200">200</option>
@@ -89,6 +75,7 @@ const Register = () => {
                         <option value="400">400</option>
                         <option value="500">500</option>
                       </select>
+                      <div className='md:w-50 pb-3 text-xs text-red-600 italic'>{errors.level?.type === 'required' && <p role="alert" >Select Level</p>}</div>
                     </div>
                   </div>
 

@@ -25,7 +25,7 @@ const Confirm = () => {
       hideSpinner()
 
       generateQRCode(profile, size);
-    }, 2000);
+    }, 1000);
   }
 
   // Show spinner
