@@ -39,11 +39,11 @@ function App() {
 
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-      </Routes>
       <div>
-        <Routes>{renderRoutes()}</Routes>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          {renderRoutes()}
+        </Routes>
       </div>
     </>
   );

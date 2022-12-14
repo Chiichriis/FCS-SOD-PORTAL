@@ -2,9 +2,15 @@ import { useState } from "react";
 import logo from "../assets/Logo.png";
 import bg from "../assets/bg.jpg";
 import arrow from "../assets/free-arrow-down-icon-3101-thumb-removebg-preview.png";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const [open, setOpen] = useState(true);
+
+  const nav = useNavigate()
+  const initForm = () =>{
+    nav("/verify")
+  }
 
   return (
     <>
@@ -31,7 +37,7 @@ const Home = () => {
               <button className="bg-blue-400 text-white px-4 md:px-8 md:py-2 py-1 rounded-xs mr-1 text-sm font-workSans">
                 EXPLORE
               </button>
-              <button className="ml-1 border border-slate-300 px-4 py-1 md:px-8 md:py-2 rounded-xs text-sms font-workSans">
+              <button className="ml-1 border border-slate-300 px-4 py-1 md:px-8 md:py-2 rounded-xs text-sms font-workSans" onClick={initForm}>
                 REGISTER
               </button>
             </div>
@@ -65,7 +71,7 @@ const Home = () => {
               <p className="text-sm font-slabo md:text-base">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae obcaecati consectetur dolor mollitia sapiente iusto fugiat, repellat, soluta dolorum voluptas voluptatem consequuntur hic nemo rerum tenetur aliquid aspernatur deserunt reiciendis.
               </p>
-              <button className="bg-blue-400 text-xs md:text-sm text-white px-2 py-1 md:px-4 md:py-2 rounded-xs mt-2">JOIN CLASS</button>
+              <button className="bg-blue-400 text-xs md:text-sm text-white px-2 py-1 md:px-4 md:py-2 rounded-xs mt-2" onClick={initForm}>JOIN CLASS</button>
             </div>
 
           </div>
