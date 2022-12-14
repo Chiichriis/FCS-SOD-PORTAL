@@ -23,8 +23,13 @@ const VerifyPin = ({ handleVerify, setTData }) => {
             </p>
 
             <div className="mt-12 text-center">
-              <h3 className="font-workSans uppercase font-medium text-sm md:base">Welcome to SOD Registration Portal</h3>
-              <p className="font-slabo text-sm md:text-sm p-2">Thank you for taking this glorious step to a beautiful Destiny. Please Enter Your Pin or Token Below to Start your registration</p>
+              <h3 className="font-workSans uppercase font-medium text-sm md:base">
+                Welcome to SOD Registration Portal
+              </h3>
+              <p className="font-slabo text-sm md:text-sm p-2">
+                Thank you for taking this glorious step to a beautiful Destiny.
+                Please Enter Your Pin or Token Below to Start your registration
+              </p>
             </div>
 
             <form
@@ -50,7 +55,14 @@ const VerifyPin = ({ handleVerify, setTData }) => {
                 className="bg-blue-400 text-white w-full mt-3 p-2 md:p-3 rounded-sm font-workSans uppercase text-sm cursor-pointer"
               />
               <p className="font-slabo text-sm md:text-sm  p-2 text-center italic text-red-600">
-              Do not have a Pin/Token? Click <a href="" className="text-blue-400 ml-1 underline"> here</a>
+                Do not have a Pin/Token? Click{" "}
+                <a
+                  href="https://wa.link/ym8rh4"
+                  className="text-blue-400 ml-1 underline"
+                >
+                  {" "}
+                  here
+                </a>
               </p>
             </form>
           </div>
