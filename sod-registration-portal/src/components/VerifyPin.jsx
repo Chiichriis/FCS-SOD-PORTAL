@@ -57,7 +57,7 @@ const VerifyPin = ({ handleVerify, setTData }) => {
               <p className="font-slabo text-sm md:text-sm  p-2 text-center italic text-red-600">
                 Do not have a Pin/Token? Click{" "}
                 <a
-                  href="https://wa.link/ym8rh4"
+                  href="http://wa.link/anq9cm"
                   className="text-blue-400 ml-1 underline"
                 >
                   {" "}

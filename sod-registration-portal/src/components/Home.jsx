@@ -1,6 +1,6 @@
 import { useState } from "react";
 import logo from "../assets/Logo.png";
-import bg from "../assets/bg.jpg";
+import bg from "../assets/alice-donovan-rouse-UweNcthlmDc-unsplash.jpg"
 import arrow from "../assets/free-arrow-down-icon-3101-thumb-removebg-preview.png";
 import { useNavigate } from "react-router-dom";
 
@@ -40,9 +40,9 @@ const Home = () => {
           <img
             src={bg}
             alt="background"
-            className="w-auto h-full md:h-96 rounded-xs "
+            className="w-auto h-full md:h-96 rounded-xs backdrop-blur-sm md:backdrop-blur-none "
           />
-          <div className="absolute top-50 flex flex-col items-center md:relative">
+          <div className="absolute top-50 flex flex-col items-center md:relative ">
             <p className="font-slabo font-medium text-base md:text-lg md:xl uppercase">
               Are you ready to experience Glory?
             </p>
@@ -59,7 +59,7 @@ const Home = () => {
               >
                 REGISTER
               </button>
-              <button className="ml-1 border border-slate-300 px-4 py-1 md:px-8 md:py-2 rounded-xs text-sms font-workSans">
+              <button className="ml-1 border border-white md:border-slate-300 px-4 py-1 md:px-8 md:py-2 rounded-xs text-sms font-workSans text-white md:text-black">
                 <a href="#dept">EXPLORE</a>
               </button>
             </div>
