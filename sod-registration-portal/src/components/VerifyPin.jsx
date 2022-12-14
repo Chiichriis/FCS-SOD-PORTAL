@@ -22,16 +22,9 @@ const VerifyPin = ({ handleVerify, setTData }) => {
               School of Destiny (SOD) '22
             </p>
 
-            <div className="mt-12">
-              <p className="p-2 m-2 font-slabo text-xs md:text-xs md:text-sm rounded-sm font-light bg-slate-100 w-fit">
-                Are you ready to Experience God's Glory?
-              </p>
-              <p className="font-slabo text-sm md:text-sm  p-2 text-justify">
-                For two weekends, In ten departments, and over 150
-                life-transforming courses you are invited to explore the riches
-                of Gods glory. God's glory will be seen, lives will be
-                transformed, and history will be made
-              </p>
+            <div className="mt-12 text-center">
+              <h3 className="font-workSans uppercase font-medium text-sm md:base">Welcome to SOD Registration Portal</h3>
+              <p className="font-slabo text-sm md:text-sm p-2">Thank you for taking this glorious step to a beautiful Destiny. Please Enter Your Pin or Token Below to Start your registration</p>
             </div>
 
             <form
@@ -46,7 +39,7 @@ const VerifyPin = ({ handleVerify, setTData }) => {
                 type="text"
                 value={token}
                 onChange={(e) => setToken(e.target.value)}
-                placeholder="Enter your Token/Pin here"
+                placeholder="Token/Pin"
                 className="px-4 py-3 md:py-4 rounded-sm text-xs md:text-sm font-workSans border outline-transparent font-thin w-full"
                 required
                 pattern="\S(.*\S)?"
@@ -56,6 +49,9 @@ const VerifyPin = ({ handleVerify, setTData }) => {
                 type="submit"
                 className="bg-blue-400 text-white w-full mt-3 p-2 md:p-3 rounded-sm font-workSans uppercase text-sm cursor-pointer"
               />
+              <p className="font-slabo text-sm md:text-sm  p-2 text-center italic text-red-600">
+              Do not have a Pin/Token? Click <a href="" className="text-blue-400 ml-1 underline"> here</a>
+              </p>
             </form>
           </div>
         </div>
