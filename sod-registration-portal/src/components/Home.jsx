@@ -1,6 +1,6 @@
 import { useState } from "react";
 import logo from "../assets/Logo.png";
-import bg from "../assets/alice-donovan-rouse-UweNcthlmDc-unsplash.jpg"
+import bg from "../assets/alice-donovan-rouse-UweNcthlmDc-unsplash.jpg";
 import arrow from "../assets/free-arrow-down-icon-3101-thumb-removebg-preview.png";
 import { useNavigate } from "react-router-dom";
 
@@ -99,7 +99,8 @@ const Home = () => {
                     believers in the body of Christ. Aren't we all ONE in
                     Christ? You also have those questions abi? Well, this might
                     just be the class for you. Get your answers and build a
-                    solid foundation of The Word of God above doctrines.
+                    solid foundation of the Word of God for your life and the
+                    church.
                   </p>
                   <p className="font-slabo text-sm md:text-base mt-2">
                     <b>Bible Reference:</b> Ephesians 4:11-16, 2 Timothy 2:15, 2
@@ -196,7 +197,7 @@ const Home = () => {
                     everywhere but do you know it's better to build a mindset of
                     excellence and gain mastery than reaching out there to say
                     "Balabablu"? Truth is there's more to getting skills and
-                    sabificates. Academic excellence gives you an edge. What's
+                    "sabificates". Academic excellence gives you an edge. What's
                     wrong in having it all when God can actually give it all to
                     you? I mean look at Daniel. This class is your next power
                     boost to sharpening yourself academically. You have fears?
@@ -282,7 +283,7 @@ const Home = () => {
                     wealth and influence is your edge in God's kingdom.
                     Mindsets, belief systems, disciplines. You probably lack
                     that with making money. Dear believer, don't you think it's
-                    time to change your ways, i mean your money ways. Think
+                    time to change your ways, I mean your money ways. Think
                     about it
                   </p>
                   <p className="font-slabo text-sm md:text-base mt-2">
@@ -362,10 +363,11 @@ const Home = () => {
                     All other mountains of influence are greatly influenced by
                     the smallest unit and like the Pareto's principle, the
                     family and relationship aspect of our lives gives us the 80%
-                    result in every other sphere. You didn't know how important
-                    relationships were? Maybe you should asked the guy who was
-                    brought by his friends through the roof to receive his
-                    healing. There's more for you to know dears.
+                    result in every other sphere. If you don't know how
+                    important relationships are? Maybe you should asked the guy
+                    who was brought by his friends through the roof to receive
+                    his healing from Jesus. There's a treasure for you in this
+                    class. Come Explore.
                   </p>
                   <p className="font-slabo text-sm md:text-base mt-2">
                     <b>Bible Reference:</b> Gen 1:26-28, Gen 2:24, Mark 10:8,
@@ -447,8 +449,7 @@ const Home = () => {
                     Your understanding of your identity in Christ is more
                     important than your self identification. If you're quick to
                     lose sight of who you are in Christ because of the chaos
-                    around you, this is the train for you. Come receive
-                    enlightenment.
+                    around you, this is the train for you. Hop in!
                   </p>
                   <p className="font-slabo text-sm md:text-base mt-2">
                     <b>Bible Reference:</b> Gen 1:26-28, 1 Pet 2:9-10, Psa
@@ -523,11 +524,13 @@ const Home = () => {
 
                 <div className={`${open5 && "scale-0"} mt-3`}>
                   <p className="text-sm font-slabo md:text-base">
-                    Servant-Leaders has always been God's way to keep us on the
-                    right track and mindset of true leadership. You serve to
-                    lead, you lead to serve, that's the two sides of this coin.
-                    Just like everyone of us, wouldn't you want to know how to
-                    find a balance. Join us then, the train is yours to board.
+                    "Servant-Leadership" has always been God's way to keep us on
+                    the right track and mind of true leadership. We serve to
+                    lead, more so, we lead to serve. Both explanations are two
+                    sides of the same coin. This class is here to preach the
+                    true tenets of leadership God's way and to stir your life
+                    into notable excellence and relevance in this present world.
+                    Join in!
                   </p>
                   <p className="font-slabo text-sm md:text-base mt-2">
                     <b>Bible Reference:</b> Genesis 1:26-28, Psalm 78:70-72,
@@ -603,10 +606,10 @@ const Home = () => {
 
                 <div className={`${open6 && "scale-0"} mt-3`}>
                   <p className="text-sm font-slabo md:text-base">
-                    We are the creator's creatives, His masterpieces that master
-                    pieces in art. Entertainment is a mountain that greatly
-                    needs the Lord's army to step in. So are you part of
-                    the Lord's army?
+                    "We are the creator's creatives, His masterpieces that
+                    master pieces in art." Entertainment is a mountain that
+                    greatly needs the Lord's army to step in. So are you part of
+                    the Lord's army? Say yes please!
                   </p>
                   <p className="font-slabo text-sm md:text-base mt-2">
                     <b>Bible Reference:</b> Exodus 36:1, psalms 68:11,
@@ -693,12 +696,12 @@ const Home = () => {
                 <div className={`${open7 && "scale-0"} mt-3`}>
                   <p className="text-sm font-slabo md:text-base">
                     Are you a fervent listener of Gideon Odoma or passed time
-                    with Ravi Zacharias? Being a Christian apologetic requires
+                    with Ravi Zacharias? Being a Christian apologetist requires
                     more than just following apologetics online. Wisdom calls
-                    from the city top and the market place to come and drink
-                    from her wells. You'll need more than just a thousand tapes,
-                    you'll need a basic but solid foundation to not just speak
-                    but to speak spirit and life.
+                    the city top and the marketplace to come and drink from her
+                    wells." You'll need more than just a thousand tapes, you'll
+                    need a basic but solid foundation to not just speak but to
+                    speak spirit and life.
                   </p>
                   <p className="font-slabo text-sm md:text-base mt-2">
                     <b>Bible Reference:</b> 1 Peter 3:15, Matthew 24:14, Rom
@@ -796,12 +799,13 @@ const Home = () => {
 
                 <div className={`${open8 && "scale-0"} mt-3`}>
                   <p className="text-sm font-slabo md:text-base">
-                    Crazy Faith is what we call it these days. Faith cometh by
-                    hearing and hearing the Word of God. You'll need faith to
-                    access the unseen, the hoped for and the supernatural. Are
-                    you into crazy and supernatural for God, don't worry it's
-                    not "Sid Roth's it's supernatural" but it could be. Let's
-                    get you registered abeg, there's no time to spend time.
+                    Crazy Faith is what we call it these days. "Faith cometh by
+                    hearing and hearing the Word of God." You'll need faith to
+                    access the unseen, the hoped for, and the supernatural. Are
+                    you ready to experience the supernatural firsthand, don't
+                    worry it's not Sid Roth's "it's supernatural" but it could
+                    be. Let's get you registered abeg, there's no
+                    time to spend time.
                   </p>
                   <p className="font-slabo text-sm md:text-base mt-2">
                     <b>Bible Reference:</b> Heb 11:6, Mark 16:15, Heb 11:3, Acts
@@ -878,7 +882,7 @@ const Home = () => {
                     models who live lives guided by God's ideals and
                     characterized by strong character. The purpose of this
                     course is to examine basic living ethics and etiquettes as
-                    they apply to everyday life
+                    they apply to everyday life. Don't worry when you choose any course above, this one will be added for free. Welcome in anticipation.
                   </p>
                   <p className="font-slabo text-sm md:text-base mt-2">
                     <b>Bible Reference:</b> Genesis 1:26-28, 2 Peter 1:3-4, 1
