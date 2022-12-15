@@ -49,7 +49,7 @@ const Home = () => {
             <p className="font-slabo text-sm md:text-sm  p-2 text-center mx-6">
               For two weekends, In ten departments, and over 150
               life-transforming courses you are invited to explore the riches of
-              God's glory. In SOD '23 God's glory will be seen, lives will be
+              God's glory. In SOD '22 God's glory will be seen, lives will be
               transformed, and history will be made.
             </p>
             <div className="mt-2 flex flex-1">
@@ -78,7 +78,10 @@ const Home = () => {
                   open ? "h-10" : "h-86"
                 } duration-300 mt-8 mx-6 relative md:w-96 `}
               >
-                <div className="flex bg-purple-300 rounded-sm md:w-fit">
+                <div
+                  className="flex bg-purple-300 rounded-sm md:w-fit cursor-pointer"
+                  onClick={() => setOpen(!open)}
+                >
                   <p className="font-medium text-sm font-workSans p-2 md:text-lg md:pr-6">
                     Biblical Theology and Ecumenism (BTE)
                   </p>
@@ -87,8 +90,7 @@ const Home = () => {
                     alt=""
                     className={`absolute cursor-pointer md:relative w-5 h-fit right-0 mr-2 pt-2 md:pt-3 ${
                       !open && "rotate-180"
-                    }`} //work on this line
-                    onClick={() => setOpen(!open)}
+                    }`}
                   />
                 </div>
 
@@ -177,7 +179,10 @@ const Home = () => {
                   open1 ? "h-10" : "h-86"
                 } duration-300 mt-3 mx-6 relative md:w-96`}
               >
-                <div className="flex bg-blue-300 rounded-sm md:w-fit">
+                <div
+                  className="flex bg-blue-300 rounded-sm md:w-fit cursor-pointer"
+                  onClick={() => setOpen1(!open1)}
+                >
                   <p className="font-medium text-sm font-workSans p-2 md:text-lg md:pr-6">
                     Erudition and Academic Exploits (EAE)
                   </p>
@@ -187,7 +192,6 @@ const Home = () => {
                     className={`absolute cursor-pointer md:relative w-5 h-fit right-0 mr-2 pt-2 md:pt-3 ${
                       !open1 && "rotate-180"
                     }`} //work on this line
-                    onClick={() => setOpen1(!open1)}
                   />
                 </div>
 
@@ -263,7 +267,10 @@ const Home = () => {
                   open2 ? "h-10" : "h-86"
                 } duration-300 mt-3 mx-6 relative md:w-96`}
               >
-                <div className="flex bg-slate-300 rounded-sm md:w-fit">
+                <div
+                  className="flex bg-slate-300 rounded-sm md:w-fit cursor-pointer"
+                  onClick={() => setOpen2(!open2)}
+                >
                   <p className="font-medium text-sm font-workSans p-2 md:text-lg md:pr-6">
                     Wealth and Influence (WIN)
                   </p>
@@ -273,7 +280,6 @@ const Home = () => {
                     className={`absolute cursor-pointer md:relative w-5 h-fit right-0 mr-2 pt-2 md:pt-3 ${
                       !open2 && "rotate-180"
                     }`} //work on this line
-                    onClick={() => setOpen2(!open2)}
                   />
                 </div>
 
@@ -344,7 +350,10 @@ const Home = () => {
                   open3 ? "h-10" : "h-86"
                 } duration-300 mt-3 mx-6 relative md:w-96`}
               >
-                <div className="flex bg-red-300 rounded-sm md:w-fit">
+                <div
+                  className="flex bg-red-300 rounded-sm md:w-fit cursor-pointer"
+                  onClick={() => setOpen3(!open3)}
+                >
                   <p className="font-medium text-sm font-workSans p-2 md:text-lg md:pr-6">
                     Family Life and Relationship (FLR)
                   </p>
@@ -354,7 +363,6 @@ const Home = () => {
                     className={`absolute cursor-pointer md:relative w-5 h-fit right-0 mr-2 pt-2 md:pt-3 ${
                       !open3 && "rotate-180"
                     }`} //work on this line
-                    onClick={() => setOpen3(!open3)}
                   />
                 </div>
 
@@ -430,7 +438,10 @@ const Home = () => {
                   open4 ? "h-10" : "h-86"
                 } duration-300 mt-3 mx-6 relative md:w-96`}
               >
-                <div className="flex bg-green-300 rounded-sm md:w-fit">
+                <div
+                  className="flex bg-green-300 rounded-sm md:w-fit cursor-pointer"
+                  onClick={() => setOpen4(!open4)}
+                >
                   <p className="font-medium text-sm font-workSans p-2 md:text-lg md:pr-6">
                     Identity and Dominion (IDO)
                   </p>
@@ -440,7 +451,6 @@ const Home = () => {
                     className={`absolute cursor-pointer md:relative w-5 h-fit right-0 mr-2 pt-2 md:pt-3 ${
                       !open4 && "rotate-180"
                     }`} //work on this line
-                    onClick={() => setOpen4(!open4)}
                   />
                 </div>
 
@@ -508,7 +518,10 @@ const Home = () => {
                   open5 ? "h-10" : "h-86"
                 } duration-300 mt-8 mx-6 relative md:w-96 `}
               >
-                <div className="flex bg-yellow-300 rounded-sm md:w-fit">
+                <div
+                  className="flex bg-yellow-300 rounded-sm md:w-fit cursor-pointer"
+                  onClick={() => setOpen5(!open5)}
+                >
                   <p className="font-medium text-sm font-workSans p-2 md:text-lg md:pr-6">
                     Leadership and Culture (LCU)
                   </p>
@@ -518,7 +531,6 @@ const Home = () => {
                     className={`absolute cursor-pointer md:relative w-5 h-fit right-0 mr-2 pt-2 md:pt-3 ${
                       !open5 && "rotate-180"
                     }`} //work on this line
-                    onClick={() => setOpen5(!open5)}
                   />
                 </div>
 
@@ -590,7 +602,10 @@ const Home = () => {
                   open6 ? "h-10" : "h-86"
                 } duration-300 mt-3 mx-6 relative md:w-96`}
               >
-                <div className="flex bg-pink-300 rounded-sm md:w-fit">
+                <div
+                  className="flex bg-pink-300 rounded-sm md:w-fit cursor-pointer"
+                  onClick={() => setOpen6(!open6)}
+                >
                   <p className="font-medium text-sm font-workSans p-2 md:text-lg md:pr-6">
                     Arts and Entertainment (ARTS)
                   </p>
@@ -600,7 +615,6 @@ const Home = () => {
                     className={`absolute cursor-pointer md:relative w-5 h-fit right-0 mr-2 pt-2 md:pt-3 ${
                       !open6 && "rotate-180"
                     }`} //work on this line
-                    onClick={() => setOpen6(!open6)}
                   />
                 </div>
 
@@ -679,7 +693,10 @@ const Home = () => {
                   open7 ? "h-10" : "h-86"
                 } duration-300 mt-3 mx-6 relative md:w-96`}
               >
-                <div className="flex bg-cyan-300 rounded-sm md:w-fit">
+                <div
+                  className="flex bg-cyan-300 rounded-sm md:w-fit cursor-pointer"
+                  onClick={() => setOpen7(!open7)}
+                >
                   <p className="font-medium text-sm font-workSans p-2 md:text-lg md:pr-6">
                     Missions and Apologetics (MSA)
                   </p>
@@ -689,7 +706,6 @@ const Home = () => {
                     className={`absolute cursor-pointer md:relative w-5 h-fit right-0 mr-2 pt-2 md:pt-3 ${
                       !open7 && "rotate-180"
                     }`} //work on this line
-                    onClick={() => setOpen7(!open7)}
                   />
                 </div>
 
@@ -783,7 +799,10 @@ const Home = () => {
                   open8 ? "h-10" : "h-86"
                 } duration-300 mt-3 mx-6 relative md:w-96`}
               >
-                <div className="flex bg-orange-300 rounded-sm md:w-fit">
+                <div
+                  className="flex bg-orange-300 rounded-sm md:w-fit cursor-pointer"
+                  onClick={() => setOpen8(!open8)}
+                >
                   <p className="font-medium text-sm font-workSans p-2 md:text-lg md:pr-6">
                     Faith and the Supernatural (FAS)
                   </p>
@@ -793,7 +812,6 @@ const Home = () => {
                     className={`absolute cursor-pointer md:relative w-5 h-fit right-0 mr-2 pt-2 md:pt-3 ${
                       !open8 && "rotate-180"
                     }`} //work on this line
-                    onClick={() => setOpen8(!open8)}
                   />
                 </div>
 
@@ -859,7 +877,10 @@ const Home = () => {
                   open9 ? "h-10" : "h-86"
                 } duration-300 mt-3 mx-6 relative md:w-96`}
               >
-                <div className="flex bg-teal-300 rounded-sm md:w-fit">
+                <div
+                  className="flex bg-teal-300 rounded-sm md:w-fit cursor-pointer"
+                  onClick={() => setOpen9(!open9)}
+                >
                   <p className="font-medium text-sm font-workSans p-2 md:text-lg md:pr-6">
                     General Life Talk (GLT)
                   </p>
@@ -869,7 +890,6 @@ const Home = () => {
                     className={`absolute cursor-pointer md:relative w-5 h-fit right-0 mr-2 pt-2 md:pt-3 ${
                       !open9 && "rotate-180"
                     }`} //work on this line
-                    onClick={() => setOpen9(!open9)}
                   />
                 </div>
 
@@ -882,7 +902,9 @@ const Home = () => {
                     models who live lives guided by God's ideals and
                     characterized by strong character. The purpose of this
                     course is to examine basic living ethics and etiquettes as
-                    they apply to everyday life. Don't worry when you choose any course above, this one will be added for free. Welcome in anticipation.
+                    they apply to everyday life. Don't worry when you choose any
+                    course above, this one will be added for free. Welcome in
+                    anticipation.
                   </p>
                   <p className="font-slabo text-sm md:text-base mt-2">
                     <b>Bible Reference:</b> Genesis 1:26-28, 2 Peter 1:3-4, 1
