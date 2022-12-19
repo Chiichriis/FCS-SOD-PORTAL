@@ -25,34 +25,35 @@ const Home = () => {
     <>
       <div>
         <div className="flex m-2 md:mx-20 md:pl-8 p-2 items-center">
-          <img src={logo} alt="logo" className="w-fit h-20 md:h-28" />
+          <img src={logo} alt="logo" className="w-fit h-20 md:h-26" />
           <div className="ml-2">
-            <h3 className="font-workSans uppercase text-base md:text-xl font-bold md:text-base">
+            <h3 className="font-workSans uppercase text-base md:text-lg font-bold md:text-base">
               His Dwelling Place
             </h3>
-            <p className="font-slabo text-base md:text-lg border-b border-slate-300 pb-1">
+            <p className="font-slabo text-base md:text-base border-b border-slate-300 pb-1">
               School of Destiny (SOD) '22
             </p>
           </div>
+          <div>
+                
+          </div>
         </div>
 
-        <div className=" h-full mt-5 relative flex items-center justify-center md:justify-around md:mx-20">
+        <div className=" h-full mt-5 md:mt-8 relative flex items-center justify-center md:justify-around md:mx-20">
           <img
             src={bg}
             alt="background"
             className="w-auto h-full md:h-96 rounded-xs backdrop-blur-sm md:backdrop-blur-none "
           />
-          <div className="absolute top-50 flex flex-col items-center md:relative ">
-            <p className="font-slabo font-medium text-base md:text-lg md:xl uppercase">
-              Are you ready to experience Glory?
-            </p>
-            <p className="font-slabo text-sm md:text-sm  p-2 text-center mx-6">
+          <div className="absolute top-50 flex flex-col items-left md:relative md:ml-10">
+            <p className="font-slabo text-sm md:text-base p-2 text-left md:text-left mx-6">
+                <b className="font-slabo text-sm md:text-base">Are you Ready to experience Glory?<br></br></b>
               For two weekends, In ten departments, and over 150
               life-transforming courses you are invited to explore the riches of
               God's glory. In SOD '22 God's glory will be seen, lives will be
               transformed, and history will be made.
             </p>
-            <div className="mt-2 flex flex-1">
+            <div className="mt-2 flex flex-1 content-center mx-8">
               <button
                 className="bg-blue-400 text-white px-4 md:px-8 md:py-2 py-1 rounded-xs mr-1 text-sm font-workSans"
                 onClick={initForm}
@@ -79,7 +80,7 @@ const Home = () => {
                 } duration-300 mt-8 mx-6 relative md:w-96 `}
               >
                 <div
-                  className="flex bg-purple-300 rounded-sm md:w-fit cursor-pointer"
+                  className="flex bg-purple-300 rounded-sm md:w-full cursor-pointer"
                   onClick={() => setOpen(!open)}
                 >
                   <p className="font-medium text-sm font-workSans p-2 md:text-lg md:pr-6">
@@ -88,7 +89,7 @@ const Home = () => {
                   <img
                     src={arrow}
                     alt=""
-                    className={`absolute cursor-pointer md:relative w-5 h-fit right-0 mr-2 pt-2 md:pt-3 ${
+                    className={`absolute cursor-pointer w-5 h-fit right-0 mr-2 pt-2 md:pt-3 ${
                       !open && "rotate-180"
                     }`}
                   />
@@ -109,58 +110,41 @@ const Home = () => {
                     Peter 1:2-3
                   </p>
                   <p className="font-slabo text-sm md:text-base mt-2">
-                    <b>Class AKA:</b> "Custodians of verity"
+                    <b>Class AKA:</b> "Advocates of verity"
                   </p>
                   <p className="font-slabo text-sm md:text-base font-medium mt-2">
                     <b>Course Map: </b>
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    BTE 111 Introduction to subject matter of class ( Biblical
+                    BTE 111 Introduction to subject matter of class (Biblical
                     theology and ecumenism).
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    BTE112 Introduction to theology I (generally, To capture the
-                    classification of theology).
+                    BTE 112 Christology & Ecumenism (in the light of Biblical theology).
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    BTE121 Introduction to theology II (Biblical theology i.e
-                    specific).
+                    BTE 121 Ecumenism.
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    BTE122 Christology (in the light of Biblical theology).
+                    BTE 122 Prominent Men / Women in Church history and their work (Plycarp, Origen, St. Augustine etc).
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    BTE131 Soteriology (in the light of Biblical theology).
+                    BTE 131 Christianity and culture (The church in the world, It's non-conformity and its relevance, church and politics).
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    BTE132 Ecumenism ( establishment of the idea).
+                    BTE 132 Biblical Hermeneutics.
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    BTE211 Church history and historians.
+                    BTE 211 Common doctrines and tensions I.
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    BTE212 Prominent men/ women in church history and their
-                    works e.g Polycarp, Origen, St. Augustine.
+                    BTE 212 Common doctrines and tensions II.
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    BTE221 Christianity and culture i.e the church in the world
-                    ( It's non-conformity and its relevance, church and
-                    politics).
+                    BTE 221 Monotheism and Trinitarianism.
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    BTE222 Biblical Hermeneutics.
-                  </p>
-                  <p className="font-slabo text-sm md:text-base">
-                    BTE231 Common doctrines and tensions I.
-                  </p>
-                  <p className="font-slabo text-sm md:text-base">
-                    BTE232 Common doctrines and tensions II.
-                  </p>
-                  <p className="font-slabo text-sm md:text-base">
-                    BTE311 Monotheism and Trinitarianism.
-                  </p>
-                  <p className="font-slabo text-sm md:text-base">
-                    BTE312 Question and answer session.
+                    BTE 222 Question and answer session.
                   </p>
                   <p className="font-slabo text-sm md:text-base">Examination</p>
                   <p className="font-slabo text-sm md:text-base">Graduation</p>
@@ -180,7 +164,7 @@ const Home = () => {
                 } duration-300 mt-3 mx-6 relative md:w-96`}
               >
                 <div
-                  className="flex bg-blue-300 rounded-sm md:w-fit cursor-pointer"
+                  className="flex bg-blue-300 rounded-sm md:w-full cursor-pointer"
                   onClick={() => setOpen1(!open1)}
                 >
                   <p className="font-medium text-sm font-workSans p-2 md:text-lg md:pr-6">
@@ -189,7 +173,7 @@ const Home = () => {
                   <img
                     src={arrow}
                     alt=""
-                    className={`absolute cursor-pointer md:relative w-5 h-fit right-0 mr-2 pt-2 md:pt-3 ${
+                    className={`absolute cursor-pointer w-5 h-fit right-0 mr-2 pt-2 md:pt-3 ${
                       !open1 && "rotate-180"
                     }`} //work on this line
                   />
@@ -203,15 +187,11 @@ const Home = () => {
                     "Balabablu"? Truth is there's more to getting skills and
                     "sabificates". Academic excellence gives you an edge. What's
                     wrong in having it all when God can actually give it all to
-                    you? I mean look at Daniel. This class is your next power
-                    boost to sharpening yourself academically. You have fears?
-                    You can come in here and build on your academic weaknesses
-                    and sharpen your strengths too. Fear not, God dey for you
-                    too.
+                    you? I mean look at Daniel. This class is designed to provoke a culture of excellence and brilliance in you academics and quest for knowledge that will culminate in world-class ideas and innovations that will radically expand the frontiers of God's kingdom in the world.
                   </p>
                   <p className="font-slabo text-sm md:text-base mt-2">
                     <b>Bible Reference:</b> (2 Timothy 2:15, Daniel 1:17, Exodus
-                    31:1-5, 3 John 1:2, Acts 7:22)
+                    31:1-6, 3 John 1:2, Acts 7:22)
                   </p>
                   <p className="font-slabo text-sm md:text-base mt-2">
                     <b>Class AKA:</b> “Kingdom Erudites”
@@ -220,37 +200,22 @@ const Home = () => {
                     <b>Course Map: </b>
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    EAE 111: Education and Erudition
+                    EAE 111 Education and Erudition
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    EAE 112: Knowledge, Wisdom, and Understanding
+                    EAE 112 Knowledge, Wisdom, and Understanding
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    EAE 121: Excellence
+                    EAE 113 Excellence
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    EAE 122: The supernatural mentality and mental excellence.
+                    EAE 211 Academic Success.
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    EAE 131: Inner brilliance, Outer Glory 1
+                    EAE 212 Profitable Schooling
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    EAE 132: Inner brilliance, Outer Glory 1
-                  </p>
-                  <p className="font-slabo text-sm md:text-base">
-                    EAE 211: Academic Success
-                  </p>
-                  <p className="font-slabo text-sm md:text-base">
-                    EAE 212: -Study Skills, Tips & Tools
-                  </p>
-                  <p className="font-slabo text-sm md:text-base">
-                    EAE 221 & 222: Profitable Schooling
-                  </p>
-                  <p className="font-slabo text-sm md:text-base">
-                    EAE 311: Examination and Impartation
-                  </p>
-                  <p className="font-slabo text-sm md:text-base">
-                    EAE 312: Exclusive session
+                    EAE 213 Examination & Impartation
                   </p>
                   <p className="font-slabo text-sm md:text-base">Graduation</p>
                   <button
@@ -268,7 +233,7 @@ const Home = () => {
                 } duration-300 mt-3 mx-6 relative md:w-96`}
               >
                 <div
-                  className="flex bg-slate-300 rounded-sm md:w-fit cursor-pointer"
+                  className="flex bg-slate-300 rounded-sm md:w-full cursor-pointer"
                   onClick={() => setOpen2(!open2)}
                 >
                   <p className="font-medium text-sm font-workSans p-2 md:text-lg md:pr-6">
@@ -277,7 +242,7 @@ const Home = () => {
                   <img
                     src={arrow}
                     alt=""
-                    className={`absolute cursor-pointer md:relative w-5 h-fit right-0 mr-2 pt-2 md:pt-3 ${
+                    className={`absolute cursor-pointer w-5 h-fit right-0 mr-2 pt-2 md:pt-3 ${
                       !open2 && "rotate-180"
                     }`} //work on this line
                   />
@@ -351,7 +316,7 @@ const Home = () => {
                 } duration-300 mt-3 mx-6 relative md:w-96`}
               >
                 <div
-                  className="flex bg-red-300 rounded-sm md:w-fit cursor-pointer"
+                  className="flex bg-red-300 rounded-sm md:w-full cursor-pointer"
                   onClick={() => setOpen3(!open3)}
                 >
                   <p className="font-medium text-sm font-workSans p-2 md:text-lg md:pr-6">
@@ -360,7 +325,7 @@ const Home = () => {
                   <img
                     src={arrow}
                     alt=""
-                    className={`absolute cursor-pointer md:relative w-5 h-fit right-0 mr-2 pt-2 md:pt-3 ${
+                    className={`absolute cursor-pointer w-5 h-fit right-0 mr-2 pt-2 md:pt-3 ${
                       !open3 && "rotate-180"
                     }`} //work on this line
                   />
@@ -382,43 +347,37 @@ const Home = () => {
                     Matt 19:8.
                   </p>
                   <p className="font-slabo text-sm md:text-base mt-2">
-                    <b>Class AKA:</b> “Love Pacesetters”
+                    <b>Class AKA:</b> “Love Pace setters”
                   </p>
                   <p className="font-slabo text-sm md:text-base font-medium mt-2">
                     <b>Course Map: </b>
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    FLR 101- Introduction to family life and relationship
+                    FLR 111 Introduction to Family life and realtionship
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    FLR 111- God's original intention
+                    FLR 112 God's original intent for relationship and family life
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    FLR 121- Understanding male and female
+                    FLR 122 Singleness
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    FLR 121- Singleness
+                    FLR 131 Friendship
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    FLR 122- God's idea of love
+                    FLR 132 Relationship
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    FLR 131- Friendship
+                    FLR 211 Courtship
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    FLR 132- Dating and Courtship
+                    FLR 212 Sex and sexuality
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    FLR 201- Sex and sexuality
+                    FLR 221 Marriage
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    FLR 211- Tools for effective marriage
-                  </p>
-                  <p className="font-slabo text-sm md:text-base">
-                    FLR 221- contemporary issues 1
-                  </p>
-                  <p className="font-slabo text-sm md:text-base">
-                    FLR 221- contemporary issues 2
+                    FLR 222- contemporary issues
                   </p>
                   <p className="font-slabo text-sm md:text-base">
                     FLR 231- Examination and impartation.
@@ -439,7 +398,7 @@ const Home = () => {
                 } duration-300 mt-3 mx-6 relative md:w-96`}
               >
                 <div
-                  className="flex bg-green-300 rounded-sm md:w-fit cursor-pointer"
+                  className="flex bg-green-300 rounded-sm md:w-full cursor-pointer"
                   onClick={() => setOpen4(!open4)}
                 >
                   <p className="font-medium text-sm font-workSans p-2 md:text-lg md:pr-6">
@@ -448,7 +407,7 @@ const Home = () => {
                   <img
                     src={arrow}
                     alt=""
-                    className={`absolute cursor-pointer md:relative w-5 h-fit right-0 mr-2 pt-2 md:pt-3 ${
+                    className={`absolute cursor-pointer w-5 h-fit right-0 mr-2 pt-2 md:pt-3 ${
                       !open4 && "rotate-180"
                     }`} //work on this line
                   />
@@ -457,9 +416,7 @@ const Home = () => {
                 <div className={`${open4 && "scale-0"} mt-3`}>
                   <p className="text-sm font-slabo md:text-base">
                     Your understanding of your identity in Christ is more
-                    important than your self identification. If you're quick to
-                    lose sight of who you are in Christ because of the chaos
-                    around you, this is the train for you. Hop in!
+                    important than your self identification. understanding your purpose and pursuing it is the most fulfilled way to live. If you're quick to loose sight of who you are in Christ because of the chaos around you, if ou need clarity on matters of purpose discovery and fulfilment, this is the train for you. Hop in!
                   </p>
                   <p className="font-slabo text-sm md:text-base mt-2">
                     <b>Bible Reference:</b> Gen 1:26-28, 1 Pet 2:9-10, Psa
@@ -496,9 +453,6 @@ const Home = () => {
                     IDE 312 The Governors Summit
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    FLR 211- Tools for effective marriage
-                  </p>
-                  <p className="font-slabo text-sm md:text-base">
                     IDE 313 Examination
                   </p>
                   <p className="font-slabo text-sm md:text-base">Graduation</p>
@@ -519,7 +473,7 @@ const Home = () => {
                 } duration-300 mt-8 mx-6 relative md:w-96 `}
               >
                 <div
-                  className="flex bg-yellow-300 rounded-sm md:w-fit cursor-pointer"
+                  className="flex bg-yellow-300 rounded-sm md:w-full cursor-pointer"
                   onClick={() => setOpen5(!open5)}
                 >
                   <p className="font-medium text-sm font-workSans p-2 md:text-lg md:pr-6">
@@ -528,7 +482,7 @@ const Home = () => {
                   <img
                     src={arrow}
                     alt=""
-                    className={`absolute cursor-pointer md:relative w-5 h-fit right-0 mr-2 pt-2 md:pt-3 ${
+                    className={`absolute cursor-pointer w-5 h-fit right-0 mr-2 pt-2 md:pt-3 ${
                       !open5 && "rotate-180"
                     }`} //work on this line
                   />
@@ -536,13 +490,7 @@ const Home = () => {
 
                 <div className={`${open5 && "scale-0"} mt-3`}>
                   <p className="text-sm font-slabo md:text-base">
-                    "Servant-Leadership" has always been God's way to keep us on
-                    the right track and mind of true leadership. We serve to
-                    lead, more so, we lead to serve. Both explanations are two
-                    sides of the same coin. This class is here to preach the
-                    true tenets of leadership God's way and to stir your life
-                    into notable excellence and relevance in this present world.
-                    Join in!
+                    Leadership has always been a key instrument God uses to bring about the the execution of his agenda in every institutions of the world (family, Business, Government, Education, Religion, Finance, Military, Science and Technology etc.). Hence, He is constantly raising men and women to champion His course on this earth.  This class is here to preach the true tenets of leadership God's way and to stir you life into notable excellence and relevance in this present world. Join in!
                   </p>
                   <p className="font-slabo text-sm md:text-base mt-2">
                     <b>Bible Reference:</b> Genesis 1:26-28, Psalm 78:70-72,
@@ -555,34 +503,34 @@ const Home = () => {
                     <b>Course Map: </b>
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    LCU111 & LCU112 - Introduction to Leadership.
+                    LCU111 & LCU112  Introduction to Leadership.
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    LCU121 & LCU122 - Culture of Leadership
+                    LCU121 & LCU122  Culture of Leadership
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    LCU131 - Leadership and Family Life I.
+                    LCU131  Leadership and Family Life I.
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    LCU132 - Leadership and Family Life II.
+                    LCU132  Leadership and Family Life II.
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    LCU211 - Leadership and Business I.
+                    LCU211  Leadership and Business I.
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    LCU212 - Leadership and Business II.
+                    LCU212  Leadership and Business II.
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    LCU221 - Leadership and Politics I.
+                    LCU221  Leadership and Politics I.
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    LCU222 - Leadership and Politics II.
+                    LCU222  Leadership and Politics II.
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    LCU311 & LCU312 - Leadership and Protégé.
+                    LCU311 & LCU312  Leadership and Protégé.
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    LCU321 & LCU322 - Questions and Answers.
+                    LCU321 & LCU322  Questions and Answers.
                   </p>
                   <p className="font-slabo text-sm md:text-base">
                     Impartation and Examination
@@ -603,7 +551,7 @@ const Home = () => {
                 } duration-300 mt-3 mx-6 relative md:w-96`}
               >
                 <div
-                  className="flex bg-pink-300 rounded-sm md:w-fit cursor-pointer"
+                  className="flex bg-pink-300 rounded-sm md:w-full cursor-pointer"
                   onClick={() => setOpen6(!open6)}
                 >
                   <p className="font-medium text-sm font-workSans p-2 md:text-lg md:pr-6">
@@ -612,7 +560,7 @@ const Home = () => {
                   <img
                     src={arrow}
                     alt=""
-                    className={`absolute cursor-pointer md:relative w-5 h-fit right-0 mr-2 pt-2 md:pt-3 ${
+                    className={`absolute cursor-pointer w-5 h-fit right-0 mr-2 pt-2 md:pt-3 ${
                       !open6 && "rotate-180"
                     }`} //work on this line
                   />
@@ -630,53 +578,34 @@ const Home = () => {
                     Colossians 3:16, 1 Corinthians 1:5
                   </p>
                   <p className="font-slabo text-sm md:text-base mt-2">
-                    <b>Class AKA:</b> “The Creative Heralds”
+                    <b>Class AKA:</b> “The Creatives”
                   </p>
                   <p className="font-slabo text-sm md:text-base font-medium mt-2">
                     <b>Course Map: </b>
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    ART111 Panoramic view of Arts and entertainment
+                    ART 111 An overview of Arts and Entertainment
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    ART112 The Church in relations to Arts and entertainment
+                    ART 112 The Spirit-Filled Artist
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    ART121 The Spirit-filled Artist
+                    ART 113 Poetry
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    ART122 ENTERTAINMENT
+                    ART 211 Art as an expression of worship
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    ART131 PROPHETIC ART
+                    ART 212 Creativity and Skill
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    ART132 Arts as an expression of Worship
+                    ART 213 Practical Class
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    ART211 The Minister of Christ
+                    ART 215 Impartation
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    ART212 POETRY
-                  </p>
-                  <p className="font-slabo text-sm md:text-base">
-                    ART221 Expressing God to the world through Arts
-                  </p>
-                  <p className="font-slabo text-sm md:text-base">
-                    ART222 Creativity and Skill
-                  </p>
-                  <p className="font-slabo text-sm md:text-base">
-                    ART231 performance improvement [Practical Class
-                  </p>
-                  <p className="font-slabo text-sm md:text-base">
-                    ART232 Moderation, Media, and its Effects
-                  </p>
-                  <p className="font-slabo text-sm md:text-base">
-                    ART311 Exclusive Session
-                  </p>
-                  <p className="font-slabo text-sm md:text-base">
-                    {" "}
-                    Impartation and Examination
+                 Examination
                   </p>
                   <p className="font-slabo text-sm md:text-base"> Graduation</p>
                   <button
@@ -694,7 +623,7 @@ const Home = () => {
                 } duration-300 mt-3 mx-6 relative md:w-96`}
               >
                 <div
-                  className="flex bg-cyan-300 rounded-sm md:w-fit cursor-pointer"
+                  className="flex bg-cyan-300 rounded-sm md:w-full cursor-pointer"
                   onClick={() => setOpen7(!open7)}
                 >
                   <p className="font-medium text-sm font-workSans p-2 md:text-lg md:pr-6">
@@ -703,7 +632,7 @@ const Home = () => {
                   <img
                     src={arrow}
                     alt=""
-                    className={`absolute cursor-pointer md:relative w-5 h-fit right-0 mr-2 pt-2 md:pt-3 ${
+                    className={`absolute cursor-pointer w-5 h-fit right-0 mr-2 pt-2 md:pt-3 ${
                       !open7 && "rotate-180"
                     }`} //work on this line
                   />
@@ -730,61 +659,39 @@ const Home = () => {
                     <b>Course Map: </b>
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    MSA 111 : General Introduction
+                    MSA 111 General Introduction
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    MSA 112 : Introduction To Missions
+                    MSA 112 Introduction To Missions & Introduction to Apologetics
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    MSA 121 : Introduction To Apologetics
+                    MSA 121 Mission and Apologetics
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    MSA 122 : Missions And Apologetics
+                    MSA 131 The concept of Salvation
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    MSA 131: The Concept Of Salvation
+                    MSA 132 The Holy Spirit & The Holy Spirit in Missions and Aplogetics
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    MSA 132: The Holy Spirit
+                    MSA 211 Apologetics I & II
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    MSA 211: The Holy Spirit In Missions And Apologetics
+                    MSA 212 Effective Evangelism I & II
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    MSA 212: Apologetics I
+                    MSA 221 Koinonia & The Anointin
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    MSA 221: Apologetics II
+                    MSA 222 Practicals
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    MSA 222: Effective Evangelism I
+                    MSA 231 The Word and Prayer
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    MSA 231: Effective Evangelism II
-                  </p>
-                  <p className="font-slabo text-sm md:text-base">
-                    MSA 232 : Koinonia
-                  </p>
-                  <p className="font-slabo text-sm md:text-base">
-                    MSA 311 : The Anointing
-                  </p>
-                  <p className="font-slabo text-sm md:text-base">
-                    {" "}
-                    MSA 311 : The Anointing
-                  </p>
-                  <p className="font-slabo text-sm md:text-base">
-                    {" "}
-                    MSA 312 : Practicals
-                  </p>
-                  <p className="font-slabo text-sm md:text-base">
-                    {" "}
-                    MSA 321: The Word And Prayer
-                  </p>
-                  <p className="font-slabo text-sm md:text-base">
-                    {" "}
-                    MSA 322 : Impartation.
-                  </p>
-                  <p className="font-slabo text-sm md:text-base"> Graduation</p>
+                    MSA 232 Impartaion
+                  </p>         
+                  <p className="font-slabo text-sm md:text-base"> Examination & Graduation</p>
                   <button
                     className="bg-blue-400 text-xs md:text-sm text-white px-2 py-1 md:px-4 md:py-2 rounded-xs mt-2"
                     onClick={initForm}
@@ -800,7 +707,7 @@ const Home = () => {
                 } duration-300 mt-3 mx-6 relative md:w-96`}
               >
                 <div
-                  className="flex bg-orange-300 rounded-sm md:w-fit cursor-pointer"
+                  className="flex bg-orange-300 rounded-sm md:w-full cursor-pointer"
                   onClick={() => setOpen8(!open8)}
                 >
                   <p className="font-medium text-sm font-workSans p-2 md:text-lg md:pr-6">
@@ -809,7 +716,7 @@ const Home = () => {
                   <img
                     src={arrow}
                     alt=""
-                    className={`absolute cursor-pointer md:relative w-5 h-fit right-0 mr-2 pt-2 md:pt-3 ${
+                    className={`absolute cursor-pointer w-5 h-fit right-0 mr-2 pt-2 md:pt-3 ${
                       !open8 && "rotate-180"
                     }`} //work on this line
                   />
@@ -836,31 +743,31 @@ const Home = () => {
                     <b>Course Map: </b>
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    FAS 111: FAITH 1
+                    FAS 111 FAITH 1
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    FAS 112: FAITH 2
+                    FAS 112 FAITH 2
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    FAS 121: FAITH AND THE HOLY SPIRIT 1
+                    FAS 121 FAITH AND THE HOLY SPIRIT 1
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    FAS 122: FAITH AND THE HOLY SPIRIT 2
+                    FAS 122 FAITH AND THE HOLY SPIRIT 2
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    FAS 211: The Supernatural 1
+                    FAS 211 The Supernatural 1
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    FAS 212: The Supernatural 2
+                    FAS 212 The Supernatural 2
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    FAS 221: The Supernatural and Priesthood 1
+                    FAS 221 The Supernatural and Priesthood 1
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    FAS 222: The Supernatural and Priesthood 2
+                    FAS 222 The Supernatural and Priesthood 2
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    FAS 311: Examination and Impartation
+                    FAS 311 Examination and Impartation
                   </p>
                   <p className="font-slabo text-sm md:text-base">Graduation</p>
                   <button
@@ -878,7 +785,7 @@ const Home = () => {
                 } duration-300 mt-3 mx-6 relative md:w-96`}
               >
                 <div
-                  className="flex bg-teal-300 rounded-sm md:w-fit cursor-pointer"
+                  className="flex bg-teal-300 rounded-sm md:w-full cursor-pointer"
                   onClick={() => setOpen9(!open9)}
                 >
                   <p className="font-medium text-sm font-workSans p-2 md:text-lg md:pr-6">
@@ -887,7 +794,7 @@ const Home = () => {
                   <img
                     src={arrow}
                     alt=""
-                    className={`absolute cursor-pointer md:relative w-5 h-fit right-0 mr-2 pt-2 md:pt-3 ${
+                    className={`absolute cursor-pointer w-5 h-fit right-0 mr-2 pt-2 md:pt-3 ${
                       !open9 && "rotate-180"
                     }`} //work on this line
                   />
@@ -911,51 +818,36 @@ const Home = () => {
                     John 4:4-6.
                   </p>
                   <p className="font-slabo text-sm md:text-base mt-2">
-                    <b>Class AKA:</b> “Breeds of Glory”
+                    <b>Class AKA:</b> “Breeds of His Glory”
                   </p>
                   <p className="font-slabo text-sm md:text-base font-medium mt-2">
                     <b>Course Map: </b>
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    GLT 111 Bearers of the Kingdom and His Glory
+                    GLT 111 Sphere of Influence
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    GLT 112 Your mission and ministry
+                    GLT 121 Hygiene (Health) and Appearance
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    GLT 113 Christian Ethics and Etiquettes
+                    GLT 131 Christian Ethics and Etiquettes
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    GLT 211 Temperaments/ Spiritual gift
+                    GLT 211 Temperaments and the Fruit of Spirit.
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    GLT 221 The Hallmark of a Christian
+                    GLT 222 Development (interpersonal and Social Skills)
                   </p>
                   <p className="font-slabo text-sm md:text-base">
-                    GLT 222 Interpersonal and Social Skills
-                  </p>
-                  <p className="font-slabo text-sm md:text-base">
-                    GLT 311 Sphere of Influence
-                  </p>
-                  <p className="font-slabo text-sm md:text-base">
-                    GLT 312 Hygiene and Appearance
-                  </p>
-                  <p className="font-slabo text-sm md:text-base">
-                    GLT 313 Health and Development
-                  </p>
-                  <p className="font-slabo text-sm md:text-base">
-                    GLT 321 Questions and Answers
-                  </p>
-                  <p className="font-slabo text-sm md:text-base">
-                    GLT 322 Examination
+                    GLT 232 Question and Exams
                   </p>
                   <p className="font-slabo text-sm md:text-base"> Graduation</p>
-                  <button
+                  {/* <button
                     className="bg-blue-400 text-xs md:text-sm text-white px-2 py-1 md:px-4 md:py-2 rounded-xs mt-2"
                     onClick={initForm}
                   >
                     JOIN CLASS
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
